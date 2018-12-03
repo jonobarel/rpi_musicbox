@@ -1,0 +1,28 @@
+Sound pack downloaded from Freesound
+----------------------------------------
+
+This pack of sounds contains sounds by the following user:
+ - graham_makes ( https://freesound.org/people/graham_makes/ )
+
+You can find this pack online at: https://freesound.org/people/graham_makes/packs/25335/
+
+License details
+---------------
+
+Attribution: http://creativecommons.org/licenses/by/3.0/
+
+
+Sounds in this pack
+-------------------
+
+  * 449409__graham-makes__acoustic-guitar-duet.wav
+    * url: https://freesound.org/s/449409/
+    * license: Attribution
+  * 449322__graham-makes__flutey-loops.wav
+    * url: https://freesound.org/s/449322/
+    * license: Attribution
+  * 447527__gbatzler__acoustic-guitar-interlude.wav
+    * url: https://freesound.org/s/447527/
+    * license: Attribution
+
+
