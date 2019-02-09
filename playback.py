@@ -14,14 +14,14 @@ class SongPlayer:
         if files_list == None:
             raise ValueError('missing parameter: files_list cannot be None')
 
-        if !isinstance(files_list, list):
+        if not isinstance(files_list, list):
             raise TypeError('files_list parameter is not a list')
 
         if len(files_list) < 1:
             raise ValueError('files_list is empty')
 
         for f in files_list:
-            if !isinstance(f, str):
+            if not isinstance(f, str):
                 raise TypeError('files_list must only contain strings')
         
     
@@ -30,9 +30,9 @@ class SongPlayer:
     #If a song is already playing, it will first stop the playback and begin the next one.
     def play(self):
         #start a new track
-        if (self.current_proc == None || current_proc.poll() != None):
-            self.current_proc = Popen(["omxplayer", path+self.files_list[self.current]],start_new_session=True, stdin=subprocess.PIPE)
-            self.current+=1%len(files_list)
+        if (self.current_proc == None or current_proc.poll() != None):
+            self.current_proc = subprocess.Popen(["omxplayer", "--adev", "both", "--vol", "-2000", path+self.files_list[self.current]],start_new_session=True, stdin=subprocess.PIPE)
+            self.current=(self.current+1)%len(files_list)
             
         #if a process exists, check if it is still running.
         #If so, send a pause signal.
@@ -49,7 +49,7 @@ class SongPlayer:
         
 
     #Pause the currently playing song
-    def pause(self):
+    #def pause(self):
 
-    def stop(self):
+    #def stop(self):
         
